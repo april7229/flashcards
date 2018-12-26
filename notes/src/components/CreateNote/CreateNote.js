@@ -22,8 +22,8 @@ class CreateNote extends Component
         {
             console.log( 'My note is: ', this.state.note );
             let craftedNote = { ...this.state.note };
-            craftedNoted[ '_id' ] = Date.now() + craftedNote.title
-            craftedNote.createdAt = Data.now();
+            craftedNote[ '_id' ] = Date.now() + craftedNote.title;
+            craftedNote.createdAt = Date.now();
             console.log( 'My Crafted Note is:', craftedNote );
             this.props.createNote( craftedNote );
             this.props.history.push( '/' );//to return back to tje note list view after editing note
