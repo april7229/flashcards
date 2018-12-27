@@ -19,3 +19,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.hidden {
+    display: none;
+}
+@media(max-width: 940px){
+    .delete_wrapper{
+        margin-left: -20vw;
+    }
+}
